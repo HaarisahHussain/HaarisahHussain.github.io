@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head> 
+	<!--Meta tags used to tell browser how to render page on a mobile-->
+	<meta charset="UTF-8>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1 />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	
+	<!--Page title-->
+	<title>Legal</title> 
+	
+	<!--Link to CSS file-->
+	<link rel="stylesheet" href="style.css">
+	
+</head>
+<body>
+
+<!--Navigation Bar-->
+<div class="box-area">
+<header>
+			<div class="wrapper">
+			<div class="logo">
+			<a href='#'>The Sharmardiaries Band</a>
+			</div>
+			<nav>
+			<a href="index.html">Home</a></li> <!-- Defines a list item -->
+			<a href="bookingEnquiries.html">Booking Enquiries</a></li> <!-- Defines a list item -->
+			<a href="galleryPage.html">Gallery</a></li> <!-- Creates a hyperlink linking to another page -->
+			<a href="merchPage.html">Merchandise</a></li>
+			</nav>
+		</div>
+	</header>
+	
+	<div class="banner-area">
+		<h2>Legal</h2>
+		<form class="view-cart" target="paypal" action="https://www.paypal.com/cgi-bin/webscr"
+	method="post">
+	<!-- Identify your business so that you can collect the payments. -->
+	<input type="hidden" name="business" value="test@band.com">
+	
+	<!-- Specify a PayPal shopping cart View Cart button. -->
+	<input type="hidden" name="cmd" value="_cart">
+	<input type="hidden" name="display" value="1">
+	
+	<!-- Display the View Cart button. -->
+	<input type="image" name="submit"
+		src="https://www.paypalobjects.com/en_US/i/btn/btn_viewcart_LG.gif"
+		alt="Add to Cart">
+	<img alt="" width="1" height="1"
+		src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
+</form>
+
+</div>
+</div>
+<!--Content Area for legal page(Paragphs of text)-->
+	<div class="content-area">
+		<div class="wrapper">
+			<p class="index-text">
+			The information contained in this website is for general information purposes only. 
+			The information is provided by The Sharmanaires Big Band 
+			and while we endeavour to keep the information up to date and correct, 
+			we make no representations or warranties of any kind, express or implied, 
+			about the completeness, accuracy, reliability, suitability 
+			or availability with respect to the website 
+			or the information, products, services, 
+			or related graphics contained on the website for any purpose. 
+			Any reliance you place on such information is therefore strictly at your own risk.
+			<br><br>In no event will we be liable for any loss or damage including without limitation, indirect or consequential loss or damage, or any loss or damage whatsoever arising from loss of data or profits arising out of, 
+			or in connection with, the use of this website.
+			</p>
+		</div>
+	</div>
+<!-- Footer -->
+<!--Creating Hyperlinks-->
+<section class="footer">
+	<div class="main-footer">
+    <ul class="list">
+		<li><a href="legal.html">Legal</a></li>
+		<li><a onclick="myPopFunction()">Delivery</a></li>
+		<li><a onclick="returnsPopUp()">Returns</a></li>
+	</ul>
+		
+     </ul>
+  </div>
+  </body>
+</footer>
+
+<!--Script-->
+<!--Script-->
+<!--Creates a pop up page and message-->
+<script>
+function myPopFunction() { //Displays a pop up message containing text
+	alert("The delivery policy can be used in conjunction with our terms and conditions of sale documents and our returns policy template. It is included in all the versions of our online shop pack.Some notes on the contents of the template delivery policy are set out below.");
+}
+
+</script>
+<script>
+function returnsPopUp(){
+	alert("Items purchased online can be returned to our Returns Team within 28 days of delivery. All returned items must be unworn and in their original condition and packaging, in order for a refund or exchange to be processed. If this is not the case, we cannot guarantee your return will be accepted.");
+}
+</script>
+<script>
+// When the user clicks on <div>, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+</script>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>

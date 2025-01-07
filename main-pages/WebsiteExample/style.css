@@ -1,0 +1,253 @@
+/*Importing fonts that can be refrenced later on*/
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap');
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+/*Body and Header*/
+body{
+	font-family:'Zilla Slab', serif; /*Use of imported font*/
+	text-align:center;
+	display:flex;
+	flex-direction:column;
+	min-height:100vh;
+	
+}
+/*Wrapper used to format webpage by adding margins and center content on the page*/
+.wrapper{
+	width:100%;
+	margin:0 auto; /*Centralizes content*/
+	
+}
+header{
+	width:100%;
+	height:100px;
+	background-color:#D2042D; /*Setting the background colour to cherry red*/
+	position:fixed;
+}
+
+/*"The Sharmanaries Band" Text styling on the navigation bar*/
+.logo{
+	width:30%;
+	float:left;
+	text-align:left;
+	line-height:100px;
+}
+.logo a{
+	text-decoration:none; 
+	font-size:20px;
+	font-family: 'Pacifico', cursive;
+	color:#FFFFFF; 
+	letter-spacing:5px;
+}
+
+/*Naivgation Bar styling*/
+nav{
+	float:right;
+	line-height:100px;
+}
+nav a{
+	text-decoration:none;
+	font-family: 'Poppins', sans-serif;
+	letter-spacing:4px; 
+	font-size:30px;
+	color:white; 
+	padding:36px 10px;
+	margin:0 1px;
+}
+
+/*Creates a hover when you click over any ul element on navigation bar*/
+nav a:hover{
+	background:white;
+	color:black;
+}
+/*Banner Area Styling*/
+.banner-area{
+	background-image: url(Images/bannerWideWithLogo.jpg); /*Adds the band image to the nav bar*/
+	background-size:cover;  /*Make sure image fits evenly across the banner*/
+	/*Styling that affects the width/height etc., of image*/
+	background-position:center center;
+	top:100px;
+	height:50vh;
+	width:100%;
+	position:fixed;
+}
+/*Styles the text in the middle*/
+.banner-area h2{
+	padding-top:8%;
+	font-size:50px;
+	color:white;
+}
+/*Adds cosmetic content to the banner such as opacity and centralizing the banner accordingly */
+.banner-area:after{
+	content: "";
+	position:absolute;
+	top:0;
+	left:10;
+	display:block;
+	width:100%;
+	height:100%;
+	background-color:white;
+	opacity:.3;
+	z-index:-1;
+}
+
+/*Controls how much content can fit in the area depending on the width, and top space.*/
+.content-area{
+	width:100%;
+	min-height:100vh;
+	margin-bottom: -100px;
+	position:relative;
+	background:#D2042D;
+	top:600px;
+	min-height:calc();
+	flex-grow:1;
+}
+/*Styling the header in the content area*/
+.content-area h2{
+	font-size:40px;
+	margin:0;
+	padding-top:30px;
+	text-align:justify;
+}
+/*Styling the paragraph in the content area*/
+.content-area p{ 
+padding:2% 0;
+line-height:30px;
+text-align:justify
+}
+
+
+/*Footer*/
+/*Makes sure the footer is fixed at all times*/
+.footer, .push{
+	height:500px;
+}
+/*Styling the footer elements*/
+.footer ul{
+	margin-top:0; 
+	padding:0;
+	list-style:none;
+	font-size:18px;
+	line-height:1.6;
+	margin-bottom:0;
+	text-align:center;
+	color:white;
+}
+
+/*Lists the items in the HTML UL tags*/
+.footer ul li a{
+	color:inherit;
+	text-decoration:none;
+	opacity:0.8;
+	font-size:50px;
+}
+.footer ul li{
+	display:inline-block;
+	padding: 0 15px;
+}
+
+/*DIV GRID*/
+/*Sets flexible length on flexible items*/
+.container{
+	display:flex;
+	flex-wrap:wrap;
+}
+
+/*Creating a grid with the div tags and also controlling positioning of image*/
+.container > div > img {
+	width:500px;
+	height:500px;
+	object-fit:cover;
+	padding:5px;
+	font-color:white;
+	
+}
+
+/*Text and Buttons*/
+/*Styling of the text including color, alignment, height, margins, size etc*/
+.index-text{
+	padding-top:8%;
+	font-size:35px;
+	color:white;	
+}
+
+/*Makes sure merchandise buttons and cart buttons are centralized accordingly to their text or image*/
+.merch-text{
+	text-align:center;
+	color:white;
+	font-size:30px;
+}
+
+.view-cart{
+	width:100px;
+	height:100px;
+	margin:auto;
+}
+
+.Add-To-Cart{
+	width:100px;
+	height:100px;
+	margin:auto;
+}
+
+label{
+	padding-top:8%;
+	font-size:25px;
+	color:white;
+}
+
+
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #CD001A;
+  color: white;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}.hide {
+  display: none;
+}

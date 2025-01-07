@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head> 
+	<!--Meta tags used to tell browser how to render page on a mobile-->
+	<meta charset="UTF-8>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1 />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	
+	<!--Page title-->
+	<title> Gallery Page </title> 
+	
+	<!--Link to CSS file-->
+	<link rel="stylesheet" href="style.css">
+	
+</head>
+<body>
+
+<!--Navigation Bar-->
+<div class="box-area">
+<header>
+			<div class="wrapper">
+			<div class="logo">
+			<a href='#'>The Sharmardiaries Band</a>
+			</div>
+			<nav>
+			<a href="index.html">Home</a></li> <!-- Defines a list item -->
+			<a href="bookingEnquiries.html">Booking Enquiries</a></li> <!-- Defines a list item -->
+			<a href="galleryPage.html">Gallery</a></li> <!-- Creates a hyperlink linking to another page -->
+			<a href="merchPage.html">Merchandise</a></li>
+			</nav>
+		</div>
+	</header>
+	
+	<div class="banner-area">
+		<h2>Gallery</h2>
+		<form class="view-cart" target="paypal" action="https://www.paypal.com/cgi-bin/webscr"
+	method="post">
+	<!-- Identify your business so that you can collect the payments. -->
+	<input type="hidden" name="business" value="test@band.com">
+	
+	<!-- Specify a PayPal shopping cart View Cart button. -->
+	<input type="hidden" name="cmd" value="_cart">
+	<input type="hidden" name="display" value="1">
+	
+	<!-- Display the View Cart button. -->
+	<input type="image" name="submit"
+		src="https://www.paypalobjects.com/en_US/i/btn/btn_viewcart_LG.gif"
+		alt="Add to Cart">
+	<img alt="" width="1" height="1"
+		src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
+</form>
+
+</div>
+</div>
+<!--Gallery Page contents-->
+	<div class="content-area">
+		<div class="wrapper">
+			<div class="container">
+			<div class="item1"><img src="Images/band0.jpg"></div> <!--Links to an image file-->
+			<div class="item2"><img src="Images/band1.jpg"></div>
+			<div class="item3"><img src="Images/band2.jpg"></div>
+			<div class="item4"><img src="Images/band3.jpg"></div>
+			<div class="item5"><img src="Images/band4.jpg"></div>
+			<div class="item6"><img src="Images/band5.jpg"></div>
+			<div class="item7"><img src="Images/band6.jpg"></div>
+			<div class="item8"><img src="Images/band7.jpg"></div>
+			<div class="item9"><img src="Images/band8.jpg"></div>
+			<div class="item10"><img src="Images/band9.jpg"></div>
+			<div class="item11"><video width="320" height="220" controls><source src="The Sharmanaires Big Band 1.mp4" type="video/mp4"></video></div> <!--Links to a video file-->
+			<div class="item12"><video width="320" height="220" controls><source src="The Sharmanaires Big Band 1.mp4" type="video/mp4"></video></div>
+			<div class="item13"><video width="320" height="220" controls><source src="The Sharmanaires Big Band 1.mp4" type="video/mp4"></video></div>
+		</div>
+	</div>
+	
+<div class="push"></div>
+<!-- Footer -->
+<!--Creating Hyperlinks-->
+<section class="footer">
+	<div class="main-footer">
+    <ul class="list">
+		<li><a href="legal.html">Legal</a></li>
+		<li><a onclick="myPopFunction()">Delivery</a></li>
+		<li><a onclick="returnsPopUp()">Returns</a></li>
+	</ul>
+		
+     </ul>
+  </div>
+  </body>
+</footer>
+
+<!--Script-->
+<!--Script-->
+<!--Creates a pop up page and message-->
+<script>
+function myPopFunction() { //Displays a pop up message containing text
+	alert("The delivery policy can be used in conjunction with our terms and conditions of sale documents and our returns policy template. It is included in all the versions of our online shop pack.Some notes on the contents of the template delivery policy are set out below.");
+}
+
+</script>
+<script>
+function returnsPopUp(){
+	alert("Items purchased online can be returned to our Returns Team within 28 days of delivery. All returned items must be unworn and in their original condition and packaging, in order for a refund or exchange to be processed. If this is not the case, we cannot guarantee your return will be accepted.");
+}
+</script>
+<script>
+// When the user clicks on <div>, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+</script>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>

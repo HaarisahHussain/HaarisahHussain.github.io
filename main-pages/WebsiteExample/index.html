@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head> 
+	<!--Meta tags used to tell browser how to render page on a mobile-->
+	<meta charset="UTF-8>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1 />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!--Page title-->
+	<title> About us </title> 
+	
+	<!--Link to CSS file-->
+	<link rel="stylesheet" href="style.css"> 
+	
+</head>
+<body>
+
+<!--Navigation Bar-->
+<div class="box-area">
+<header>
+			<div class="wrapper">
+			<div class="logo">
+			<a href='#'>The Sharmardiaries Band</a> <!--Band Name on navigation bar-->
+			</div>
+			<nav>
+			<a href="index.html">Home</a></li> <!-- Defines a list item -->
+			<a href="bookingEnquiries.html">Booking Enquiries</a></li> <!-- Defines a list item -->
+			<a href="galleryPage.html">Gallery</a></li> <!-- Creates a hyperlink linking to another page -->
+			<a href="merchPage.html">Merchandise</a></li>
+			</nav>
+		</div>
+	<!--Where Banner image is used alongside view cart button and page title-->
+	<div class="banner-area"> 
+		<h2>The Sharmardiaries Band</h2>
+		<form class="view-cart" target="paypal" action="https://www.paypal.com/cgi-bin/webscr"
+method="post">
+	<!-- Identify your business so that you can collect the payments. -->
+	<input type="hidden" name="business" value="test@band.com">
+	
+	<!-- Specify a PayPal shopping cart View Cart button. -->
+	<input type="hidden" name="cmd" value="_cart">
+	<input type="hidden" name="display" value="1">
+	
+	<!-- Display the View Cart button. -->
+	<input type="image" name="submit"
+		src="https://www.paypalobjects.com/en_US/i/btn/btn_viewcart_LG.gif"
+		alt="Add to Cart">
+	<img alt="" width="1" height="1"
+		src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
+</form>
+</div>
+</div>
+</header>
+<!--Main bofy of content for the page-->
+	<div class="content-area">
+		<div class="wrapper">
+			<p class="index-text">
+			The Sharmanaires Big Band is local band from Birmingham.  They formed in the 1970s as a tribute band to the great artists of the swing era such as 
+			Glen Miller, Benny Goodman, Ted Heath, Count Basie and many more.
+			<br><br>The Sharmanaires make regular appearances for the Solihull Royal British Legion every Thursday at Broomfield Hall. 
+			They are also available for Dinner Dances, Concerts, Weddings etc.
+			</p>
+		</div>
+	</div>
+
+<div class="push"></div>
+<!-- Footer -->
+<!--Creating Hyperlinks-->
+<section class="footer">
+	<div class="main-footer">
+    <ul class="list">
+	<!--Links to an HTML file and popups-->
+		<li><a href="legal.html">Legal</a></li> 
+		<li><a onclick="myPopFunction()">Delivery</a></li>
+		<li><a onclick="returnsPopUp()">Returns</a></li>
+	</ul>
+		
+     </ul>
+  </div>
+  </body>
+</footer>
+
+<!--Script-->
+<!--Script-->
+<!--Creates a pop up page and message-->
+<script>
+function myPopFunction() { //Displays a pop up message containing text
+	alert("The delivery policy can be used in conjunction with our terms and conditions of sale documents and our returns policy template. It is included in all the versions of our online shop pack.Some notes on the contents of the template delivery policy are set out below.");
+}
+
+</script>
+<script>
+function returnsPopUp(){
+	alert("Items purchased online can be returned to our Returns Team within 28 days of delivery. All returned items must be unworn and in their original condition and packaging, in order for a refund or exchange to be processed. If this is not the case, we cannot guarantee your return will be accepted.");
+}
+</script>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>

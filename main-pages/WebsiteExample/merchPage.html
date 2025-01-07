@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head> 
+	<!--Meta tags used to tell browser how to render page on a mobile-->
+	<meta charset="UTF-8>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1 />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+		
+	<!--Page title-->
+	<title> Merchandise</title> 
+	
+	
+	<!--Link to CSS file-->
+	<link rel="stylesheet" href="style.css">
+	
+</head>
+<body>
+
+	<!--Navigation Bar-->
+<div class="box-area">
+<header>
+			<div class="wrapper">
+			<div class="logo">
+			<a href='#'>The Sharmardiaries Band</a>
+			</div>
+			<nav>
+			<a href="index.html">Home</a></li> <!-- Defines a list item -->
+			<a href="bookingEnquiries.html">Booking Enquiries</a></li> <!-- Defines a list item -->
+			<a href="galleryPage.html">Gallery</a></li> <!-- Creates a hyperlink linking to another page -->
+			<a href="merchPage.html">Merchandise</a></li>
+			</nav>
+		</div>
+	</header>
+	
+	<!--Where Banner image is used alongside view cart button and page title-->
+	<div class="banner-area">
+		<h2>Merchandise</h2>
+		<form class="view-cart" target="paypal" action="https://www.paypal.com/cgi-bin/webscr"
+	method="post">
+	<!-- Identify your business so that you can collect the payments. -->
+	<input type="hidden" name="business" value="test@band.com">
+	
+	<!-- Specify a PayPal shopping cart View Cart button. -->
+	<input type="hidden" name="cmd" value="_cart">
+	<input type="hidden" name="display" value="1">
+	
+	<!-- Display the View Cart button. -->
+	<input type="image" name="submit"
+		src="https://www.paypalobjects.com/en_US/i/btn/btn_viewcart_LG.gif"
+		alt="Add to Cart">
+	<img alt="" width="1" height="1"
+		src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
+</form>
+</div>
+</div>
+<!--Gallery images with Add To Cart Button-->
+	<div class="content-area">
+		<div class="wrapper">
+				<div class="container">
+				<div>
+		<p class="merch-text">Buy CD</p>
+		<p><img src=Images\cd.jpg alt="CD Image" width=400 height=400 align=center></p>
+		<form class="Add-To-Cart" target="paypal" action=https://www.paypal.com/cgi-bin/webscrmethod="post">
+	<!-- Identify your business so that you can collect the payments. -->
+	<input type="hidden" name="business" value="test@band.com">
+
+		<!-- Specify a PayPal Shopping Cart Add to Cart button. -->
+		<input type="hidden" name="cmd" value="_cart">
+		<input type="hidden" name="add" value="1">
+
+		<!-- Specify details about the item that buyers will purchase. -->
+		<input type="hidden" name="item_name" value=" Music CDs">
+		<input type="hidden" name="amount" value="4.95">
+		<input type="hidden" name="currency_code" value="USD">
+
+		<!-- Display the payment button. -->
+		<input type="image" name="submit"
+			src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"
+			alt="Add to Cart">
+		<img alt="" width="1" height="1"
+			src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
+		</form>
+	</div>
+	<div>
+		<p class="merch-text">MENS Red-T-Shirt</p>
+		<p><img src=Images\red-tshirt.jpg alt="Mens Red-T-Shirt Image" width=400 height=400 align=center></p>
+		<form class="Add-To-Cart" target="paypal" action=https://www.paypal.com/cgi-bin/webscrmethod="post">
+	<!-- Identify your business so that you can collect the payments. -->
+	<input type="hidden" name="business" value="test@band.com">
+
+		<!-- Specify a PayPal Shopping Cart Add to Cart button. -->
+		<input type="hidden" name="cmd" value="_cart">
+		<input type="hidden" name="add" value="1">
+
+		<!-- Specify details about the item that buyers will purchase. -->
+		<input type="hidden" name="item_name" value="MENS Red-T-Shirt">
+		<input type="hidden" name="amount" value="5.95">
+		<input type="hidden" name="currency_code" value="USD">
+
+		<!-- Display the payment button. -->
+		<input type="image" name="submit"
+			src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"
+			alt="Add to Cart">
+		<img alt="" width="1" height="1"
+			src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
+		</form>
+	</div>
+	<div>
+		<p class="merch-text">WOMENS White-T-Shirt</p>
+		<p><img src=Images\white-shirt-women.jpg alt="WOMENS White-T-Shirt Image" width=400 height=400 align=center></p>
+		<form class="Add-To-Cart" target="paypal" action=https://www.paypal.com/cgi-bin/webscrmethod="post">
+	<!-- Identify your business so that you can collect the payments. -->
+	<input type="hidden" name="business" value="test@band.com">
+
+		<!-- Specify a PayPal Shopping Cart Add to Cart button. -->
+		<input type="hidden" name="cmd" value="_cart">
+		<input type="hidden" name="add" value="1">
+
+		<!-- Specify details about the item that buyers will purchase. -->
+		<input type="hidden" name="item_name" value="WOMENS White-T-Shirt">
+		<input type="hidden" name="amount" value="7.95">
+		<input type="hidden" name="currency_code" value="USD">
+
+		<!-- Display the payment button. -->
+		<input type="image" name="submit"
+			src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"
+			alt="Add to Cart">
+		<img alt="" width="1" height="1"
+			src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
+		</form>
+	</div>
+	<div>
+		<p class="merch-text">Tickets</p>
+		<p><img src=Images\tickets.png alt="Tickets" width=400 height=400 align=center></p>
+		<form class="Add-To-Cart" target="paypal" action=https://www.paypal.com/cgi-bin/webscrmethod="post">
+	<!-- Identify your business so that you can collect the payments. -->
+	<input type="hidden" name="business" value="test@band.com">
+
+		<!-- Specify a PayPal Shopping Cart Add to Cart button. -->
+		<input type="hidden" name="cmd" value="_cart">
+		<input type="hidden" name="add" value="1">
+
+		<!-- Specify details about the item that buyers will purchase. -->
+		<input type="hidden" name="item_name" value=" Tickets">
+		<input type="hidden" name="amount" value="10.95">
+		<input type="hidden" name="currency_code" value="USD">
+
+		<!-- Display the payment button. -->
+		<input type="image" name="submit"
+			src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"
+			alt="Add to Cart">
+		<img alt="" width="1" height="1"
+			src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
+		</form>
+	</div>
+			
+		</div>
+		</div>
+	</div>
+
+<div class="push"></div>
+<!-- Footer -->
+<!--Creating Hyperlinks-->
+
+<section class="footer">
+	<div class="main-footer">
+    <ul class="list">
+		<li><a href="legal.html">Legal</a></li>
+		<li><a onclick="myPopFunction()">Delivery</a></li>
+		<li><a onclick="returnsPopUp()">Returns</a></li>
+	</ul>
+		
+     </ul>
+  </div>
+  </body>
+</footer>
+
+<!--Script-->
+<!--Script-->
+<!--Creates a pop up page and message-->
+<script>
+function myPopFunction() { //Displays a pop up message containing text
+	alert("The delivery policy can be used in conjunction with our terms and conditions of sale documents and our returns policy template. It is included in all the versions of our online shop pack.Some notes on the contents of the template delivery policy are set out below.");
+}
+
+</script>
+<script>
+function returnsPopUp(){
+	alert("Items purchased online can be returned to our Returns Team within 28 days of delivery. All returned items must be unworn and in their original condition and packaging, in order for a refund or exchange to be processed. If this is not the case, we cannot guarantee your return will be accepted.");
+}
+</script>
+<script>
+// When the user clicks on <div>, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+</script>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>
