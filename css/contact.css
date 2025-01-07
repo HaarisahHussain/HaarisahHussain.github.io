@@ -1,0 +1,119 @@
+/*----- Custom Fonts ------*/
+@font-face {
+    font-family: 'Custom' ;
+    src: url(/assets/fnt/Hey\ Comic.ttf);
+}
+@font-face {
+    font-family: 'Logo';
+    src: url(/assets/fnt/magic_retro/Magic\ Retro.ttf);
+}
+@font-face {
+    font-family: "Header-Txt";
+    src: url(/assets/fnt/rosalia/Rosalia.otf);
+}
+
+/*----- Adding styling that would be applied to every page----*/
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*-----Basic Body and Header Styling----*/
+body{ 
+    font-family: sans-serif; 
+    text-align:center;
+}
+
+
+
+header {
+    width:100%;
+    height: 100px;
+    background: white;
+    position: fixed;
+    z-index: 100;
+  
+    
+}
+
+/*------- Styling Logo ------- */
+.logo{
+    float:left; 
+    width:30%;
+    text-align: left;
+    line-height:100px;
+}
+
+.logo a{
+    text-decoration: none;
+    font-size: 40px;
+    font-family: 'Logo', serif;
+    color: black;
+
+}
+
+/*------- Created nav bar and added styling to it ------- */
+nav{
+    float:right;
+    line-height:100px;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: 'Custom', serif;
+    font-size: 27px;
+    color: black;
+    padding: 36px 10px;
+    margin: 0 1px;
+    transition: .3s;
+}
+
+/*------- Adding Hover to Nav Bar Text ------- */
+
+nav a:hover, 
+nav a.active {
+    color: #c46a99;
+
+ 
+}
+/*---- Created banner area----- */
+.banner-area{
+    background-image: url(/assets/img/MainPageBackground.jpg);
+    background-size:cover;
+    background-position: center center;
+    top: 100px;
+    height: 35vh;
+    width:100%;
+    position:fixed;
+}
+
+.banner-area :after{
+    content: '';
+    position: fixed;
+    top: 0;
+    left:0;
+    display: block;
+    width:100%;
+    height:100%;
+}
+
+/*----- Adding styling for banner area header and paragraph -------*/
+.banner-area h2{
+    padding-top: 8%;
+    font-size: 60px;
+    color:black; 
+    font-family: 'Header-Txt', sans-serif;
+}
+
+/*------- Creating main content area ------*/
+.content-area{
+    width:100%;
+    height: 800px;
+    position: relative;
+    background: white;
+    top: 500px;
+    text-align: justify;
+}
+
